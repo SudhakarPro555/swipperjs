@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <style>
+            body{
+                background: #fff;
+                font-size: 14px;
+                color:#000;
+                margin: 0;
+                padding: 0;
+            }
+            .swiper-container{
+                width: 400px;
+                height: 400px;
+                padding: 50px;
+            }
+            .swiper-slide{
+                background-position: center;
+                background-size: cover;
+                width: 400px;
+                height:400px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(https://image.shutterstock.com/image-photo/mountains-during-sunset-beautiful-natural-260nw-407021107.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(https://www.gettyimages.in/gi-resources/images/500px/983794168.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(https://media.gettyimages.com/photos/woman-lifts-her-arms-in-victory-mount-everest-national-park-picture-id507910624?s=612x612)"></div>
+                <div class="swiper-slide" style="background-image:url(https://1.bp.blogspot.com/-MdaQwrpT4Gs/Xdt-ff_hxEI/AAAAAAAAQXE/oOgnysGd9LwoFLMHJ0etngKzXxmQkWc5ACLcBGAsYHQ/s400/Beautiful-Backgrounds%2B%2528122%2529.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(https://static.addtoany.com/images/dracaena-cinnabari.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(https://i1.wp.com/www.cssscript.com/wp-content/uploads/2018/06/Touch-enabled-Image-Viewer-In-Pure-JavaScript-view-bigimg-min.png?fit=581%2C482&ssl=1)"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+
+            <div class="swiper-button-next"></div>
+        </div>
+    </body>
+</html>
+
+<script>
+    var swiper= new Swiper('.swiper-container',{
+        effect:'flip',
+        grabCursor:true,
+        autoplay:{
+            delay:2000,
+            disableOnInteraction:false,
+        },
+        pagination:{
+            el:'.swipper-pagination',
+        },
+        navigation:{
+            nextEl:'.swiper-button-next',
+            prevEl:'.swiper-button-prev',
+        },
+    
+    });
+
+</script>
